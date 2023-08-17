@@ -1,0 +1,44 @@
+.btn{
+    font-size: 1.3rem;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.brown__btn{
+    padding: 15px 30px;
+    background-color: $brown-color;
+    color: $white-color;
+    &:hover{
+        background-color: $light-brown-color;
+    }
+}
+
+.black__btn{
+    padding: 15px 30px;
+    background-color: $white-color;
+    border: 1px solid $black-color;
+    color: $black-color;
+    &:hover{
+        background-color: $black-color;
+        color: $white-color;
+    }
+}
+
+.shop__btn{
+    background: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    span{
+        margin-right: 13px;
+        color: $black-color;
+        opacity: 0.5;
+        &:hover{
+            color: $brown-color;
+            opacity: 1 ;
+        }
+    }
+}

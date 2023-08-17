@@ -1,0 +1,128 @@
+main {
+    flex-grow: 1;
+}
+
+.hero {
+    background-color: #141414;
+  }
+  
+  .hero__container {
+    display: flex;
+    padding-top: 12.8rem;
+    padding-bottom: 15.8rem;
+    background-image: url("../images/hero-img-background.png");
+    background-repeat: no-repeat;
+    background-position: right 0 top -30px;
+    background-size: contain;
+  }
+  
+  .hero__content {
+    max-width: 396px;
+    width: 100%;
+  }
+  
+  .hero__overline {
+    opacity: 0.5;
+    color: #FFFFFF;
+    margin-bottom: 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+  }
+  
+  .hero__title {
+    margin-bottom: 2.4rem;
+    color: #FFFFFF;
+  }
+  
+  .hero__description {
+    margin-bottom: 4rem;
+    opacity: 0.75;
+    color: #FFFFFF;
+  }
+
+  .global__info {
+    padding-top: 10rem;
+    margin-bottom: 20rem;
+  }
+  
+  .global__info__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .global__info__content {
+    width: 100%;
+    max-width: 445px;
+    margin-right: 5rem;
+  }
+  
+  .global__info__title {
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 1.429px;
+    margin-bottom: 3.2rem;
+  }
+  
+  .global__info__description {
+    opacity: 0.5;
+  }
+  
+  .global__info__image {
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 996px) {
+    .global__info__container {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    .global__info__image {
+      margin-bottom: 6.3rem;
+    }
+    .global__info__content {
+      max-width: 573px;
+      margin-right: 0;
+    }
+    .global__info__image {
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .global__info__image {
+      width: 327px;
+      height: 300px;
+      -o-object-position: top;
+         object-position: top;
+    }
+  }
+  
+  @media screen and (max-width: 996px) {
+    .hero__container {
+      background-position: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero__content {
+      max-width: 450px;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 610px) {
+    .hero__container {
+      background-position: center;
+      background-size: cover;
+    }
+    .hero__overline {
+      margin-bottom: 1.6rem;
+    }
+    .hero__title {
+      font-size: 3.6rem;
+    }
+    .hero__description {
+      margin-bottom: 2.8rem;
+    }
+  }

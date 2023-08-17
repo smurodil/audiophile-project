@@ -1,0 +1,5 @@
+@mixin heading($fs, $ls, $lh){
+    font-size: $fs;
+    letter-spacing: $ls;
+    line-height: $lh;
+}
